@@ -14,12 +14,31 @@ def compress(chars: List[str]) -> int:
 
             if count == 1:
                 s.append(chars[i])
-
-            else:
+            
+            elif 100 > count >= 10:
                 s.append(chars[i])
                 count_str = str(count)
-                for num in count_str:
-                    s.append(num)     
+                s.append(count_str[0])
+                s.append(count_str[1])
+            
+            elif 1000 > count >= 100:
+                s.append(chars[i])
+                count_str = str(count)
+                s.append(count_str[0])
+                s.append(count_str[1])
+                s.append(count_str[2])
+            
+            elif count >= 1000:
+                s.append(chars[i])
+                count_str = str(count)
+                s.append(count_str[0])
+                s.append(count_str[1])
+                s.append(count_str[2])
+                s.append(count_str[3])
+
+            else:
+                s.append(chars[i]) 
+                s.append(str(count))     
         
         chars[::] = s
 
