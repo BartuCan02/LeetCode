@@ -17,9 +17,6 @@ def longestOnes(nums: List[int], k: int) -> int:
 
     return max_len
 
-    return max_
-
-
 
 
 print(longestOnes(nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2))
