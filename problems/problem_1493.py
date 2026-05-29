@@ -18,7 +18,7 @@ def longestSubarray(nums: List[int]) -> int:
     elif count_zero == 0:
          return len(nums) - 1
     
-    return max_
+    return 0
 
 
 print(longestSubarray(nums=[1,1,0,1]))
